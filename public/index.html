@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Real Time Chat</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+            <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="client.js"></script>
+    </script>
+    <link rel='stylesheet' type='text/css' href='style.css'></link>
+    <body>
+    <div id='wrapper'>
+    <div id="loginform">  
+    <h3> what is your name ?</h3>
+    <input type='text' id='txtUsername' />
+    <input type='button' value="Register" id='btnRegister' />
+    </div>
+    <div id="chatform"> 
+
+    <div id='left'>
+        <div id='boxTitle'> User Online</div>
+        <div id='boxContent'>...</div>
+    </div>
+    <div id='right'>
+        <div id='sayHi'>Hello <span id='currentUser'/>         </div>
+        <input type='button' id='btnLogout' value='Logout'>
+
+        <div id='listMessage'> </div> 
+        <input type='text' id='txtMessage' >
+        <input type='button' id='btnSendMessage' value='Send'>
+    </div>
+    </div>
+
+    </div>
+    </body>
+</html>
